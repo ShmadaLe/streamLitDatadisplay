@@ -520,7 +520,7 @@ with st.container():
                 choose4 = st.radio("Does this response answer the initial question?", choices)
                 choose5 = st.radio("Does the response show evidence of reasoning?", choices)
 
-                user_input = {"Username": userID, "Subreddit": selected_subreddit, "Reddit Post ID": postID, "Comment ID": commentID, "Filter Option": image_filter_option, "Q1": choose1, "Q2": choose2, "Q3": choose3, "Q4": choose4, "Q5": choose5}
+                user_input = {"Username": userID, "Subreddit": selected_subreddit, "Reddit Post ID": postID, "Comment ID": commentID, "Q1": choose1, "Q2": choose2, "Q3": choose3, "Q4": choose4, "Q5": choose5}
                 
                 key = (userID, selected_subreddit, postID, commentID)  # Use a tuple as the key
 
